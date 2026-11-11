@@ -1,0 +1,300 @@
+{
+  "busManifestSha256": "b5fd8f46481680ca781defc35f52cf181217ac5caa78677ac5196390f3ebf25b",
+  "dates": [
+    "2026-11-05",
+    "2026-11-06",
+    "2026-11-07",
+    "2026-11-08",
+    "2026-11-09",
+    "2026-11-10",
+    "2026-11-11"
+  ],
+  "rule": {
+    "cellDegrees": [
+      0.0025,
+      0.004
+    ],
+    "toleranceSeconds": 60,
+    "share": 0.9,
+    "minimumCalls": 2,
+    "labelsMustAgreeBelowCalls": 9,
+    "labelsAgree": "the same words, a shared word containing a digit, or the same digit strings",
+    "strength": [
+      "calls",
+      "publisherRoadPath",
+      "lineTripDates",
+      "registryOrder"
+    ],
+    "rank": [
+      "coach_flix_eu",
+      "coach_blablacar_eu",
+      "lu_atp_gtfs",
+      "sk-idsbk-urban",
+      "fr_lio",
+      "cy-2",
+      "cy-4",
+      "cy-5",
+      "cy-6",
+      "cy-9",
+      "cy-10",
+      "cy-11",
+      "nl_openov_national",
+      "ch_ski_2026",
+      "no_entur_national",
+      "lv_atd_national",
+      "si_dujpp_national",
+      "fi_hsl",
+      "fi_foli",
+      "fr_oura",
+      "fr_grand_est",
+      "fr_pays_loire",
+      "fr_bretagne",
+      "fr_normandie",
+      "fr_centre_val_loire",
+      "de_delfi_bus",
+      "ie_nta_bus",
+      "be_tec",
+      "be_delijn",
+      "be_stib"
+    ]
+  },
+  "basis": "A trip is listed when another source of this cohort publishes the same departure: at least 90% of its located calls (and at least two) are matched in order by one trip of the other source, at a stop in the same or a neighbouring cell of about 280 m and within 60 seconds in UTC; a match of fewer than 9 calls counts only when the line labels agree (the same words, a shared word containing a digit, or the same digit strings). The trip with more calls is shown; on equal calls the one with a publisher road path, then the source that runs more of that line in the cohort, then the source listed first in the bus registry. A date is removed only where the shown trip runs that date. Frequency-based trips are never removed.",
+  "totals": {
+    "cohortTripDates": 7479583,
+    "cohortPatterns": 319461,
+    "patternsOpened": 50450,
+    "timetablesCompared": 515527,
+    "suppressedTripDates": 79582,
+    "suppressedTrips": 31235,
+    "patternsAffected": 5311,
+    "patternsFullySuppressed": 5145,
+    "patternsPartlySuppressed": 166,
+    "overlappingTripDatesKept": {
+      "noCopyOnThatDate": 2359,
+      "copyItselfSuppressed": 290
+    },
+    "publicCountMismatches": 0,
+    "suppressedTripDatesWithLabelsNotAgreeing": 81,
+    "suppressedTripDatesWithLabelsNotIdentical": 6918,
+    "removedPatternsWithPathKeptWithout": 20,
+    "linesKeepingTripsUnderTwoSources": 232
+  },
+  "pairs": [
+    {
+      "dropped": "ch_ski_2026",
+      "kept": "de_delfi_bus",
+      "tripDates": 45863,
+      "patternsPartly": 22,
+      "patternsFully": 3053
+    },
+    {
+      "dropped": "nl_openov_national",
+      "kept": "be_delijn",
+      "tripDates": 13949,
+      "patternsPartly": 25,
+      "patternsFully": 836
+    },
+    {
+      "dropped": "ch_ski_2026",
+      "kept": "fr_oura",
+      "tripDates": 6791,
+      "patternsPartly": 14,
+      "patternsFully": 195
+    },
+    {
+      "dropped": "fr_grand_est",
+      "kept": "ch_ski_2026",
+      "tripDates": 4873,
+      "patternsPartly": 12,
+      "patternsFully": 248
+    },
+    {
+      "dropped": "de_delfi_bus",
+      "kept": "coach_flix_eu",
+      "tripDates": 3473,
+      "patternsPartly": 0,
+      "patternsFully": 597
+    },
+    {
+      "dropped": "de_delfi_bus",
+      "kept": "nl_openov_national",
+      "tripDates": 1837,
+      "patternsPartly": 0,
+      "patternsFully": 42
+    },
+    {
+      "dropped": "coach_flix_eu",
+      "kept": "de_delfi_bus",
+      "tripDates": 587,
+      "patternsPartly": 0,
+      "patternsFully": 111
+    },
+    {
+      "dropped": "nl_openov_national",
+      "kept": "de_delfi_bus",
+      "tripDates": 567,
+      "patternsPartly": 4,
+      "patternsFully": 8
+    },
+    {
+      "dropped": "de_delfi_bus",
+      "kept": "be_tec",
+      "tripDates": 430,
+      "patternsPartly": 5,
+      "patternsFully": 7
+    },
+    {
+      "dropped": "be_delijn",
+      "kept": "nl_openov_national",
+      "tripDates": 386,
+      "patternsPartly": 74,
+      "patternsFully": 16
+    },
+    {
+      "dropped": "de_delfi_bus",
+      "kept": "ch_ski_2026",
+      "tripDates": 284,
+      "patternsPartly": 4,
+      "patternsFully": 1
+    },
+    {
+      "dropped": "no_entur_national",
+      "kept": "coach_flix_eu",
+      "tripDates": 234,
+      "patternsPartly": 0,
+      "patternsFully": 20
+    },
+    {
+      "dropped": "de_delfi_bus",
+      "kept": "lu_atp_gtfs",
+      "tripDates": 192,
+      "patternsPartly": 0,
+      "patternsFully": 2
+    },
+    {
+      "dropped": "fr_oura",
+      "kept": "fr_lio",
+      "tripDates": 38,
+      "patternsPartly": 0,
+      "patternsFully": 2
+    },
+    {
+      "dropped": "ch_ski_2026",
+      "kept": "fr_grand_est",
+      "tripDates": 32,
+      "patternsPartly": 2,
+      "patternsFully": 3
+    },
+    {
+      "dropped": "be_tec",
+      "kept": "de_delfi_bus",
+      "tripDates": 24,
+      "patternsPartly": 3,
+      "patternsFully": 1
+    },
+    {
+      "dropped": "fr_bretagne",
+      "kept": "fr_normandie",
+      "tripDates": 18,
+      "patternsPartly": 1,
+      "patternsFully": 2
+    },
+    {
+      "dropped": "no_entur_national",
+      "kept": "de_delfi_bus",
+      "tripDates": 4,
+      "patternsPartly": 0,
+      "patternsFully": 1
+    }
+  ],
+  "sources": {
+    "coach_flix_eu": {
+      "patternsAdjusted": 0,
+      "patternsRemoved": 111,
+      "suppressedTripDates": 587
+    },
+    "nl_openov_national": {
+      "patternsAdjusted": 29,
+      "patternsRemoved": 844,
+      "suppressedTripDates": 14516
+    },
+    "ch_ski_2026": {
+      "patternsAdjusted": 38,
+      "patternsRemoved": 3251,
+      "suppressedTripDates": 52686
+    },
+    "no_entur_national": {
+      "patternsAdjusted": 0,
+      "patternsRemoved": 21,
+      "suppressedTripDates": 238
+    },
+    "fr_oura": {
+      "patternsAdjusted": 0,
+      "patternsRemoved": 2,
+      "suppressedTripDates": 38
+    },
+    "fr_grand_est": {
+      "patternsAdjusted": 12,
+      "patternsRemoved": 248,
+      "suppressedTripDates": 4873
+    },
+    "fr_bretagne": {
+      "patternsAdjusted": 1,
+      "patternsRemoved": 2,
+      "suppressedTripDates": 18
+    },
+    "de_delfi_bus": {
+      "patternsAdjusted": 9,
+      "patternsRemoved": 649,
+      "suppressedTripDates": 6216
+    },
+    "be_tec": {
+      "patternsAdjusted": 3,
+      "patternsRemoved": 1,
+      "suppressedTripDates": 24
+    },
+    "be_delijn": {
+      "patternsAdjusted": 74,
+      "patternsRemoved": 16,
+      "suppressedTripDates": 386
+    }
+  },
+  "fullySuppressedPatternsByCountry": {
+    "Austria": 170,
+    "Belgium": 947,
+    "Bulgaria": 2,
+    "Croatia": 45,
+    "Czech Republic": 150,
+    "Denmark": 45,
+    "Estonia": 6,
+    "Finland": 2,
+    "France": 517,
+    "Germany": 3430,
+    "Great Britain": 10,
+    "Hungary": 48,
+    "Italy": 91,
+    "Latvia": 8,
+    "Lithuania": 10,
+    "Luxembourg": 32,
+    "Netherlands": 407,
+    "Norway": 25,
+    "Poland": 159,
+    "Portugal": 4,
+    "Romania": 8,
+    "Serbia": 6,
+    "Slovakia": 36,
+    "Slovenia": 47,
+    "Spain": 14,
+    "Sweden": 34,
+    "Switzerland": 1257,
+    "Ukraine": 30
+  },
+  "notCompared": {},
+  "duplicates": {
+    "path": "duplicates.json.gz",
+    "sha256": "3aa3445e81245531dfc5eab04fdba6b05375a54e708d981f9188b24e15bf42ca",
+    "bytes": 176955,
+    "uncompressedBytes": 561530,
+    "encoding": "gzip"
+  }
+}

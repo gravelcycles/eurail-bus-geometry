@@ -18,4 +18,6 @@ Location-keyed display tiles for the bus explorer, built by `scripts/build_bus_n
 - `index/<tile zoom>/<x>-<y>.json.gz` lists tile sizes and SHA-256 hashes.
 - `tiles/<tile zoom>/<x>/<y>.json.gz`: broad levels (2, 4, 6, 8) carry a legend band per date and per mean day for each source/mode/country profile; level 10 carries exact pattern membership, line labels and end-stop names so a click can list every recorded line through a point.
 
+- `duplicates.json.gz` lists trips that two sources both publish (same stops at the same minute; the fuller copy stays, then the copy with a publisher road path, then the line's home feed). The tiles leave those copies out, and the explorer uses the list to hide them in search, details and the packet view. `duplicates-report.json` gives the totals per source pair.
+
 Trip sums are scheduled source trips per source and are never added across sources. Segments are publisher paths or straight stop chains; they do not establish roads, boarding points or physical bus counts. Each source's own licence and attribution applies to its lines, names and paths.
