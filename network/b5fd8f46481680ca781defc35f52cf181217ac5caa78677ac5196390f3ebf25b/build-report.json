@@ -2,41 +2,50 @@
   "busManifestSha256": "b5fd8f46481680ca781defc35f52cf181217ac5caa78677ac5196390f3ebf25b",
   "catalogue": {
     "path": "catalogue.json.gz",
-    "sha256": "964f224a5912eedde36e15e33d788d9ca22c7a42f653b074798802a0aaf7d6e9",
-    "bytes": 10186,
-    "uncompressedBytes": 32502,
+    "sha256": "e489ac8707bd2597151206ea32fc6cbd37b0c66a0b3f15bbd6be41fced816800",
+    "bytes": 10703,
+    "uncompressedBytes": 33442,
     "encoding": "gzip"
   },
   "levels": [
     {
       "tileZoom": 2,
       "tiles": 3,
-      "segments": 94350
+      "segments": 87968
     },
     {
       "tileZoom": 4,
       "tiles": 11,
-      "segments": 454466
+      "segments": 441623
     },
     {
       "tileZoom": 6,
       "tiles": 71,
-      "segments": 1536371
+      "segments": 1514848
     },
     {
       "tileZoom": 8,
       "tiles": 621,
-      "segments": 3338662
+      "segments": 3309761
     },
     {
       "tileZoom": 10,
-      "tiles": 5992,
-      "segments": 5193169
+      "tiles": 5987,
+      "segments": 5159119
     }
   ],
-  "routeCount": 319460,
+  "routeCount": 314315,
   "skipped": {
     "implausiblePoints": 62,
     "patternsWithoutPath": 1
+  },
+  "duplicates": {
+    "sha256": "3aa3445e81245531dfc5eab04fdba6b05375a54e708d981f9188b24e15bf42ca",
+    "bytes": 176955,
+    "uncompressedBytes": 561530,
+    "removedPatterns": 5145,
+    "adjustedPatterns": 166,
+    "suppressedTripDates": 79582,
+    "basis": "A trip is listed when another source of this cohort publishes the same departure: at least 90% of its located calls (and at least two) are matched in order by one trip of the other source, at a stop in the same or a neighbouring cell of about 280 m and within 60 seconds in UTC; a match of fewer than 9 calls counts only when the line labels agree (the same words, a shared word containing a digit, or the same digit strings). The trip with more calls is shown; on equal calls the one with a publisher road path, then the source that runs more of that line in the cohort, then the source listed first in the bus registry. A date is removed only where the shown trip runs that date. Frequency-based trips are never removed."
   }
 }
