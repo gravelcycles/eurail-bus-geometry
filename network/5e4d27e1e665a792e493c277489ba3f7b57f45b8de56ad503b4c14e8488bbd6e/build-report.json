@@ -1,0 +1,42 @@
+{
+  "busManifestSha256": "5e4d27e1e665a792e493c277489ba3f7b57f45b8de56ad503b4c14e8488bbd6e",
+  "catalogue": {
+    "path": "catalogue.json.gz",
+    "sha256": "8217c705b99d151e14f5365381a5939b49c427686331fdc9d0207c97403037c1",
+    "bytes": 22535,
+    "uncompressedBytes": 83220,
+    "encoding": "gzip"
+  },
+  "levels": [
+    {
+      "tileZoom": 2,
+      "tiles": 3,
+      "segments": 130490
+    },
+    {
+      "tileZoom": 4,
+      "tiles": 11,
+      "segments": 666392
+    },
+    {
+      "tileZoom": 6,
+      "tiles": 79,
+      "segments": 2423437
+    },
+    {
+      "tileZoom": 8,
+      "tiles": 775,
+      "segments": 5709685
+    },
+    {
+      "tileZoom": 10,
+      "tiles": 7979,
+      "segments": 9304887
+    }
+  ],
+  "routeCount": 426504,
+  "skipped": {
+    "implausiblePoints": 1,
+    "patternsWithoutPath": 1
+  }
+}
